@@ -27,7 +27,8 @@ frontend = [
   "percy",
   "sauron",
   "seed",
-  "yew"
+  "yew",
+  "frender"
 ]
 
 newstag = "frameworks"
