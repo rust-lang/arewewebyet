@@ -13,7 +13,6 @@ drivers = [
   "mysql_async",
   "postgres",
   "redis",
-  "rbatis",
   "darkredis",
   "rusqlite",
   "tokio-postgres",
@@ -30,6 +29,7 @@ drivers = [
 
 orms = [
   "diesel",
+  "rbatis",
   "rustorm",
   "sea-orm",
   "tql"
