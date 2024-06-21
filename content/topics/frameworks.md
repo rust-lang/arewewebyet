@@ -27,6 +27,7 @@ frontend = [
   "iced",
   "sauron",
   "seed",
+  "silkenweb",
   "sycamore",
   "yew"
 ]
