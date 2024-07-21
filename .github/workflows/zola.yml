@@ -9,18 +9,18 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install Zola
         run: | 
-          wget "https://github.com/getzola/zola/releases/download/v0.12.2/zola-v0.12.2-x86_64-unknown-linux-gnu.tar.gz"
-          sudo tar xzf ./zola-v0.12.2-x86_64-unknown-linux-gnu.tar.gz
+          wget "https://github.com/getzola/zola/releases/download/v0.19.1/zola-v0.19.1-x86_64-unknown-linux-gnu.tar.gz"
+          sudo tar xzf ./zola-v0.19.1-x86_64-unknown-linux-gnu.tar.gz
 
       - name: Build
         run: "export CURRENT_TIME=$(date '+%d %B %Y'); ./zola build"
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
