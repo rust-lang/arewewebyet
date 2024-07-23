@@ -1,12 +1,9 @@
-name: github pages
+name: Pull request
 
-on:
-  push:
-    branches:
-      - gh-pages
+on: [ pull_request ]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,11 +15,3 @@ jobs:
 
       - name: Build
         run: "export CURRENT_TIME=$(date '+%d %B %Y'); ./zola build"
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: zola-build
-          cname: www.arewewebyet.org
