@@ -11,13 +11,15 @@ http = [
   "async-h1",
   "h2",
   "hyper",
-  "tiny-http"
+  "tiny-http",
+  "wtx"
 ]
 
 websocket = [
   "tungstenite",
   "async-tungstenite",
-  "tokio-tungstenite"
+  "tokio-tungstenite",
+  "wtx"
 ]
 
 protocols = [
