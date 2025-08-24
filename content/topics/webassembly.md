@@ -14,6 +14,7 @@ packages=  [
   "dominator",
   "futures-signals",
   "gloo",
+  "mogwai",
   "parity-wasm",
   "plotters",
   "stdweb",
