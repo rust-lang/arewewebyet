@@ -22,7 +22,8 @@ drivers = [
   "cassandra-cpp",
   "memcache",
   "mongodb",
-  "sqlx"
+  "sqlx",
+  "qldb"
 ]
 
 orms = [
