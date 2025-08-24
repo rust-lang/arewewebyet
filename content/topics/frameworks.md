@@ -14,6 +14,7 @@ server = [
   "tide",
   "warp",
   "axum",
+  "perseus",
   "poem",
   "salvo"
 ]
