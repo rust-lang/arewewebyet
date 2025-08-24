@@ -12,6 +12,7 @@ packages=  [
   "console_error_panic_hook",
   "console_log",
   "dominator",
+  "fp-bindgen",
   "futures-signals",
   "gloo",
   "parity-wasm",
