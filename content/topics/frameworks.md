@@ -22,6 +22,7 @@ frontend = [
   "leptos",
   "dioxus",
   "iced",
+  "perseus",
   "sauron",
   "sycamore",
   "yew"
