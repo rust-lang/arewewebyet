@@ -14,6 +14,7 @@ packages = [
   "oauth2",
   "openssl",
   "oxide-auth",
+  "rusty_paseto",
   "yup-oauth2"
 ]
 
